@@ -1,0 +1,33 @@
+###
+GET http://localhost:5000/users
+Content-Type: application/json
+//get all users
+// Response 200 (application/json)
+
+###
+GET http://localhost:5000/users/6817802ab408f937ec90a368
+// get user by id
+// Response 200 (application/json)
+ 
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+  "username": "asdasd",
+  "email": "jozko@example.com",
+  "displayName": "Josdasdasda"
+}
+
+###
+PATCH http://localhost:5000/users/6817802ab408f937ec90a368
+Content-Type: application/json
+
+{
+   "username": "kjhdf;kjhas;kfjhasfd"
+}
+
+###
+DELETE http://localhost:5000/users/6817802ab408f937ec90a368
+
+
